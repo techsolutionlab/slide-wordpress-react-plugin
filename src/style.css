@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+	height: 100%;
+	margin: unset;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+.zoom-on-hover {
+	transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.pulse-arrow-button {
+	border: 1px solid #A1CFC2;
+}
+
+.pulse-arrow-button:hover {
+	background: white;
+}
+
+.zoom-on-hover:hover {
+	transform: scale(1.05); /* Scales the image to 110% of its original size */
+}
+
+.block-editor-block-list__layout.is-root-container > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+	max-width: none !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.container-post {
+	max-width: none !important;
+}
+
+
+.card-block:hover .plus-circle {
+	fill: #1A2141; /* Change to desired hover color */
+}
+
+.card-block:hover .plus-path {
+	stroke: white; /* Change to desired hover color */
+}
+
+.circle:hover {
+	width: 42px;
+	height: 42px;
+	background: white;
+	border: 2px solid #1A2141;
+}
+
+.circle:hover div {
+	background: #1A2141;
+}
+
+.circle:hover span {
+	color: white;
+}
+
+.block-editor__container img {
+	max-width: none !important;
+}
